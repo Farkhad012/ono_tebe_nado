@@ -1,0 +1,14 @@
+@import url('./fonts.css');
+
+:root {
+  /* fonts */
+  --font-primary: 'Raleway', sans-serif;
+
+  /* colors */
+  --color-dark: #000000;
+  --color-light: #FFFFFF;
+
+  /* sizes */
+  --padding: clamp(0.625rem, -0.3216rem + 3.8835vw, 3.125rem);
+  --margin-y: clamp(0rem, -3.0765rem + 12.6214vw, 8.125rem);
+}
