@@ -4,14 +4,9 @@
 
 * {
   font-family: var(--font-primary);
-  /* border: 1px solid blueviolet; */
 }
 
-/* div {
-  border: 1px solid blueviolet;
-} */
-
-/* утилитарные классы */
+/* утилитарные классы ------------------------------------------------------------------*/
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -48,7 +43,7 @@
   text-transform: uppercase;
 }
 
-/* header */
+/* header ------------------------------------------------------------------*/
 .header__inner {
   padding-block: 92px;
   display: grid;
@@ -156,7 +151,7 @@
   }
 }
 
-/* hero */
+/* hero ------------------------------------------------------------------*/
 .hero {
   color: var(--color-light);
 }
@@ -239,7 +234,7 @@
   padding: 12px 32px;
 }
 
-/* lots */
+/* lots ------------------------------------------------------------------*/
 
 .lots__inner {  
   margin-top: var(--margin-y);
@@ -303,7 +298,7 @@
   margin-top: 30px;
 }
 
-/* about */
+/* about ------------------------------------------------------------------*/
 .about__inner {
   margin-top: var(--margin-y);
   display: flex;
@@ -368,6 +363,7 @@
   margin-top: 25px;
 }
 
+/* footer ------------------------------------------------------------------ */
 .footer__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
