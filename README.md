@@ -63,7 +63,8 @@
 
 📧 Email: pharrellmusicpro@gmail.com
 
-🌐 GitHub: https://github.com/Farkhad012
+🌐 [GitHub](https://github.com/Farkhad012)
+
 
 ⚠️ Заметка
 
