@@ -4,6 +4,7 @@
 
 * {
   font-family: var(--font-primary);
+  font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
 }
 
 /* утилитарные классы ------------------------------------------------------------------*/
@@ -41,6 +42,10 @@
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 22px;
 }
 
 /* header ------------------------------------------------------------------*/
@@ -83,7 +88,6 @@
 @media screen and (max-width: 768px) {
   .header__nav {
     justify-self: center;
-
   }
 }
 
@@ -100,11 +104,12 @@
   }
 }
 
+
 .header__nav-item {
   white-space: nowrap;
 }
 
-.header__nav-item::before {
+.header__nav-item+.header__nav-item::before {
   content: '';
   display: inline-block;
   width: 7px;
@@ -115,13 +120,16 @@
   vertical-align: middle;
 }
 
-.header__nav-item:first-child::before {
-  display: none;
-}
-
-@media screen and (max-width: 1024px) {
-  .header__nav-item:first-child::before {
+@media screen and (max-width: 375px) {
+  .header__nav-item::before {
+    content: '';
     display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--color-dark);
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
   }
 }
 
@@ -230,7 +238,7 @@
 
 /* lots ------------------------------------------------------------------*/
 
-.lots__inner {  
+.lots__inner {
   margin-top: var(--margin-y);
 }
 
@@ -343,8 +351,9 @@
   }
 }
 
-.about__text {
+.about__text>p {
   margin-top: 100px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -403,6 +412,12 @@
     display: flex;
     gap: 1rem;
     white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer__nav-list {
+    flex-direction: column;
   }
 }
 
